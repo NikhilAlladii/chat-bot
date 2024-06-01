@@ -26,16 +26,18 @@ function Chatbot() {
     "Excepteur sint occaecat cupidatat non proident, "
   ];
 
-  const getRandomLoremMessage = (): string => {
-    const randomIndex = Math.floor(Math.random() * loremMessages.length);
-    return loremMessages[randomIndex];
-  };
-
   useEffect(() => {
     if (msgEnd.current) {
       msgEnd.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [messages]);
+
+
+  // lorem generator
+  const getRandomLoremMessage = (): string => {
+    const randomIndex = Math.floor(Math.random() * loremMessages.length);
+    return loremMessages[randomIndex];
+  };
 
   function handleSubmit() {
     const text = input.trim();
