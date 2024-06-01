@@ -1,0 +1,25 @@
+
+
+/* These styles also possible with the tailwind but I need write it globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(3, 0, 31);
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.chats::-webkit-scrollbar {
+  display: none;
+}
+
+
